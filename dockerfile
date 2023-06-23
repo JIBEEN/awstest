@@ -34,3 +34,6 @@ RUN mkdir /src;
 # 작업 디렉토리 src로 변경
 WORKDIR /src
 
+# docker-compose.yml에 있는 web 컨테이너 코드 실행용ㄴ
+COPY wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
